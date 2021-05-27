@@ -3,18 +3,18 @@ package com.ib.itcommon.ac;
 import java.util.List;
 
 import com.ib.itcommon.bo.Session;
-import com.ib.itcommon.dao.ISessionDao;
-import com.ib.itcommon.dao.SessionDaoBouchon;
+import com.ib.itcommon.dao.ISessionDAO;
+import com.ib.itcommon.dao.SessionDAOBouchon;
 
 /**
  * @author YH
  *
  */
-public class SessionAc implements ISessionAc {
+public class SessionAC implements ISessionAC {
 
-	private ISessionDao sessionDao = new SessionDaoBouchon();
+	private ISessionDAO sessionDAO = new SessionDAOBouchon();
 
-	public SessionAc() {
+	public SessionAC() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -23,7 +23,7 @@ public class SessionAc implements ISessionAc {
 	 * Description of the function
 	 * 
 	 * @return :
-	 * @see : SessionDaoBouchon for more info
+	 * @see : SessionDAOBouchon for more info
 	 */
 
 	@Override
@@ -31,32 +31,32 @@ public class SessionAc implements ISessionAc {
 		List<Session> sessions = null;
 
 		// appel à  la couche DAO
-		sessions = sessionDao.findAll();
+		sessions = sessionDAO.findAll();
 
 		return sessions;
 	}
 
 	@Override
 	public void delete(Session session) {
-		sessionDao.delete(session);
+		sessionDAO.delete(session);
 
 	}
 
 	@Override
 	public void update(Session session) {
-		sessionDao.update(session);
+		sessionDAO.update(session);
 
 	}
 
 	@Override
 	public void save(Session session) {
-		sessionDao.save(session);
+		sessionDAO.save(session);
 
 	}
 
 	@Override
 	public Session get(Integer id) {
-		Session session = sessionDao.get(id);
+		Session session = sessionDAO.get(id);
 		return session;
 	}
 

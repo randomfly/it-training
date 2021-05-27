@@ -10,7 +10,7 @@ import com.ib.itcommon.bo.Attendance;
  * @author YH
  *
  */
-public class AttendanceDaoBouchon implements IAttendanceDao {
+public class AttendanceDAOBouchon implements IAttendanceDAO {
 
 	@Override
 	public List<Attendance> findAll() {

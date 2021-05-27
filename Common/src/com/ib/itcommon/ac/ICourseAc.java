@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.ib.itcommon.bo.Course;
 
-public interface ICourseAc {
+public interface ICourseAC {
 
 	/**
 	 * Description of the function

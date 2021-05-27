@@ -9,7 +9,7 @@ import com.ib.itcommon.bo.User;
  * @author YH
  *
  */
-public class UserDaoBouchon implements IUserDao {
+public class UserDAOBouchon implements IUserDAO {
 
 	@Override
 	public List<User> findAll() {

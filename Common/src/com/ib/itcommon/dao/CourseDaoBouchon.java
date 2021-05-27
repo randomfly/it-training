@@ -11,7 +11,7 @@ import com.ib.itcommon.bo.Inter;
  * @author YH
  *
  */
-public class CourseDaoBouchon implements ICourseDao {
+public class CourseDAOBouchon implements ICourseDAO {
 
 	@Override
 	public List<Course> findAll() {

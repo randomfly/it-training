@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.ib.itcommon.bo.Grade;
 
-public interface IGradeDao {
+public interface IGradeDAO {
 
 	List<Grade> findAll();
 

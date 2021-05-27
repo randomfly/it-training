@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.ib.itcommon.bo.Course;
 
-public interface ICourseDao {
+public interface ICourseDAO {
 
 	List<Course> findAll();
 

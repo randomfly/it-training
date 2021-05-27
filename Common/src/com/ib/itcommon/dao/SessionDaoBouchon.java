@@ -10,7 +10,7 @@ import com.ib.itcommon.bo.Session;
  * @author YH
  *
  */
-public class SessionDaoBouchon implements ISessionDao {
+public class SessionDAOBouchon implements ISessionDAO {
 
 	@Override
 	public List<Session> findAll() {

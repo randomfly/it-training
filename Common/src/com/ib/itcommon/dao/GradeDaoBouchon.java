@@ -9,7 +9,7 @@ import com.ib.itcommon.bo.Grade;
  * @author YH
  *
  */
-public class GradeDaoBouchon implements IGradeDao {
+public class GradeDAOBouchon implements IGradeDAO {
 
 	@Override
 	public List<Grade> findAll() {

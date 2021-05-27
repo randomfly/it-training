@@ -3,18 +3,18 @@ package com.ib.itcommon.ac;
 import java.util.List;
 
 import com.ib.itcommon.bo.Grade;
-import com.ib.itcommon.dao.GradeDaoBouchon;
-import com.ib.itcommon.dao.IGradeDao;
+import com.ib.itcommon.dao.GradeDAOBouchon;
+import com.ib.itcommon.dao.IGradeDAO;
 
 /**
  * @author YH
  *
  */
-public class GradeAc implements IGradeDao {
+public class GradeAC implements IGradeDAO {
 
-	private IGradeDao gradeDao = new GradeDaoBouchon();
+	private IGradeDAO gradeDAO = new GradeDAOBouchon();
 
-	public GradeAc() {
+	public GradeAC() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -23,7 +23,7 @@ public class GradeAc implements IGradeDao {
 	 * Description of the function
 	 * 
 	 * @return :
-	 * @see : GradeDaoBouchon for more info
+	 * @see : GradeDAOBouchon for more info
 	 */
 
 	@Override
@@ -31,32 +31,32 @@ public class GradeAc implements IGradeDao {
 		List<Grade> grades = null;
 
 		// appel à  la couche DAO
-		grades = gradeDao.findAll();
+		grades = gradeDAO.findAll();
 
 		return grades;
 	}
 
 	@Override
 	public void delete(Grade grade) {
-		gradeDao.delete(grade);
+		gradeDAO.delete(grade);
 
 	}
 
 	@Override
 	public void update(Grade grade) {
-		gradeDao.update(grade);
+		gradeDAO.update(grade);
 
 	}
 
 	@Override
 	public void save(Grade grade) {
-		gradeDao.save(grade);
+		gradeDAO.save(grade);
 
 	}
 
 	@Override
 	public Grade get(Integer id) {
-		Grade grade = gradeDao.get(id);
+		Grade grade = gradeDAO.get(id);
 		return grade;
 	}
 
