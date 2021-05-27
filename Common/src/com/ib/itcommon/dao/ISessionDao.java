@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.ib.itcommon.bo.Session;
 
-public interface ISessionDao {
+public interface ISessionDAO {
 
 	List<Session> findAll();
 

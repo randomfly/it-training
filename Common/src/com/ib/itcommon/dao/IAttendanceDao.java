@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.ib.itcommon.bo.Attendance;
 
-public interface IAttendanceDao {
+public interface IAttendanceDAO {
 
 	List<Attendance> findAll();
 

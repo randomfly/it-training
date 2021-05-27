@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.ib.itcommon.bo.User;
 
-public interface IUserDao {
+public interface IUserDAO {
 
 	List<User> findAll();
 

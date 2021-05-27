@@ -6,18 +6,18 @@ package com.ib.itcommon.ac;
 import java.util.List;
 
 import com.ib.itcommon.bo.Course;
-import com.ib.itcommon.dao.CourseDaoBouchon;
-import com.ib.itcommon.dao.ICourseDao;
+import com.ib.itcommon.dao.CourseDAOBouchon;
+import com.ib.itcommon.dao.ICourseDAO;
 
 /**
  * @author YH
  *
  */
-public class CourseAc implements ICourseAc {
+public class CourseAC implements ICourseAC {
 
-	private ICourseDao courseDao = new CourseDaoBouchon();
+	private ICourseDAO courseDAO = new CourseDAOBouchon();
 
-	public CourseAc() {
+	public CourseAC() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -26,7 +26,7 @@ public class CourseAc implements ICourseAc {
 	 * Description of the function
 	 * 
 	 * @return :
-	 * @see : CourseDaoBouchon for more info
+	 * @see : CourseDAOBouchon for more info
 	 */
 
 	@Override
@@ -34,32 +34,32 @@ public class CourseAc implements ICourseAc {
 		List<Course> courses = null;
 
 		// appel à  la couche DAO
-		courses = courseDao.findAll();
+		courses = courseDAO.findAll();
 
 		return courses;
 	}
 
 	@Override
 	public void delete(Course course) {
-		courseDao.delete(course);
+		courseDAO.delete(course);
 
 	}
 
 	@Override
 	public void update(Course course) {
-		courseDao.update(course);
+		courseDAO.update(course);
 
 	}
 
 	@Override
 	public void save(Course course) {
-		courseDao.save(course);
+		courseDAO.save(course);
 
 	}
 
 	@Override
 	public Course get(Integer id) {
-		Course course = courseDao.get(id);
+		Course course = courseDAO.get(id);
 		return course;
 	}
 

@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.ib.itcommon.bo.Grade;
 
-public interface IGradeAc {
+public interface IGradeAC {
 
 	/**
 	 * Description of the function
