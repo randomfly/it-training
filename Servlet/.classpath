@@ -29,5 +29,6 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/formationJava/software/apache-cxf-3.4.3/lib/jboss-servlet-api_4.0_spec-2.0.0.Final.jar" rootpath="/"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
